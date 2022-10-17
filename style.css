@@ -188,4 +188,8 @@ footer .social a {
     .main{
         padding: 0;
     }
+
+    .main article {
+        padding: 10px;
+    }
 }
