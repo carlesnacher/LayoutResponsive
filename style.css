@@ -90,6 +90,8 @@ aside{
     padding: 10px;
     /* Tres valores: flex-grow | flex-shrink | flex-basis */
     flex: 1 1 30%;
+    /* Con esta opción dejaríamos el aside con un tamaño fijo
+    flex:0 0 300px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -101,3 +103,82 @@ aside .banner{
     height: 150px;
     margin: 10px;
 }
+
+footer{
+    background-color: #ff993e;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .links{
+    background-color: #c0392b;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+footer .links a{
+    flex-grow: 1;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .links a:hover{
+    background-color: #e74c3c;
+}
+
+footer .social{
+    background-color: #874000;
+}
+
+footer .social a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+@media screen and (max-width:800px) {
+    .contenedor{
+        flex-direction: column;
+    }
+
+    header{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .logo{
+        margin: 20px 0;
+    }
+
+    header nav{
+        width: 100%;
+    }
+
+    aside{
+        flex-direction: row;
+        flex: 0;
+    }
+
+    aside .banner{
+        flex-grow: 1;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    aside{
+        flex-direction: column;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+}
+
