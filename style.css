@@ -5,12 +5,34 @@
 }
 
 .contenedor{
-    background: #f0f0f0;
-    width: 90%;
+    background-color: #f0f0f0;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
 }
 
 body{
-    background: #f0f0f0;
+    background-color: #f0f0f0;
+}
+
+header{
+    background-color: #ff993e;
+    width: 100%;
+    padding: 20px;
+}
+
+header .logo{
+   font-size: 30px;
+}
+
+header .logo img{
+    width: 60px;
+    vertical-align: top;
+}
+
+header .logo a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    line-height: 60px;
 }
