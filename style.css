@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.contenedor{
+.contenedor {
     background-color: #f0f0f0;
     width: 100%;
     max-width: 1000px;
@@ -13,11 +13,11 @@
     flex-flow: row wrap;
 }
 
-body{
+body {
     background-color: #f0f0f0;
 }
 
-header{
+header {
     background-color: #ff993e;
     width: 100%;
     padding: 20px;
@@ -28,24 +28,24 @@ header{
     flex-wrap: wrap;
 }
 
-header .logo{
+header .logo {
     font-size: 30px;
     margin-left: 30px;
 }
 
-header .logo img{
+header .logo img {
     width: 50px;
     vertical-align: top;
 }
 
-header .logo a{
+header .logo a {
     text-decoration: none;
     color: black;
     font-family: Arial;
     line-height: 50px;
 }
 
-header nav{
+header nav {
     width: 45%;
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@ header nav{
     margin-right: 40px;
 }
 
-header nav a{
+header nav a {
     background-color: #c0392b;
     color: #ffffff;
     text-align: center;
@@ -62,30 +62,30 @@ header nav a{
     flex-grow: 1;
 }
 
-header nav a:hover{
+header nav a:hover {
     background-color: #e74c3c;
 }
 
-.main{
+.main {
     background-color: #ffffff;
     padding: 20px;
     /* Tres valores: flex-grow | flex-shrink | flex-basis */
     flex: 1 1 70%;
 }
 
-.main article{
+.main article {
     margin-bottom: 20px;
     padding: 20px;
     border-bottom: 1px solid #000;
 }
 
-.main article:nth-last-child(1){
+.main article:nth-last-child(1) {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
 }
 
-aside{
+aside {
     background-color: #008000;
     padding: 10px;
     /* Tres valores: flex-grow | flex-shrink | flex-basis */
@@ -98,13 +98,13 @@ aside{
     flex-direction: column;
 }
 
-aside .banner{
+aside .banner {
     background-color: #ff993e;
     height: 150px;
     margin: 10px;
 }
 
-footer{
+footer {
     background-color: #ff993e;
     width: 100%;
     padding: 20px;
@@ -113,14 +113,14 @@ footer{
     justify-content: space-between;
 }
 
-footer .links{
+footer .links {
     background-color: #c0392b;
     display: flex;
     flex-wrap: wrap;
     margin-left: 30px;
 }
 
-footer .links a{
+footer .links a {
     flex-grow: 1;
     color: #ffffff;
     padding: 10px;
@@ -128,15 +128,15 @@ footer .links a{
     text-decoration: none;
 }
 
-footer .links a:hover{
+footer .links a:hover {
     background-color: #e74c3c;
 }
 
-footer .social{
+footer .social {
     background-color: #874000;
 }
 
-footer .social a{
+footer .social a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
@@ -144,36 +144,36 @@ footer .social a{
 }
 
 @media screen and (max-width:800px) {
-    .contenedor{
+    .contenedor {
         flex-direction: column;
     }
 
-    header{
+    header {
         flex-direction: column;
         padding: 0;
     }
 
-    header .logo{
+    header .logo {
         margin: 20px 0;
     }
 
-    header nav{
+    header nav {
         width: 100%;
     }
 
-    aside{
+    aside {
         flex-direction: row;
         flex: 0;
     }
 
-    aside .banner{
+    aside .banner {
         flex-grow: 1;
     }
-    
+
 }
 
-@media screen and (max-width: 600px){
-    aside{
+@media screen and (max-width: 600px) {
+    aside {
         flex-direction: column;
     }
 
@@ -181,8 +181,11 @@ footer .social a{
         justify-content: space-around;
     }
 
-    aside{
+    aside {
         display: none;
     }
-}
 
+    .main{
+        padding: 0;
+    }
+}
