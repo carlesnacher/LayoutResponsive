@@ -18,15 +18,21 @@ body{
 header{
     background-color: #ff993e;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 header .logo{
-   font-size: 30px;
+    font-size: 30px;
+    margin-left: 30px;
 }
 
 header .logo img{
-    width: 60px;
+    width: 50px;
     vertical-align: top;
 }
 
@@ -34,11 +40,14 @@ header .logo a{
     text-decoration: none;
     color: black;
     font-family: Arial;
-    line-height: 60px;
+    line-height: 50px;
 }
 
 header nav{
-    width: 50%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header nav a{
@@ -46,7 +55,8 @@ header nav a{
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 25px;
+    font-family: Arial;
 }
 
 header nav a:hover{
