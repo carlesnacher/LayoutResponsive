@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background: #f0f0f0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+body{
+    background: #f0f0f0;
+}
