@@ -180,5 +180,9 @@ footer .social a{
     footer {
         justify-content: space-around;
     }
+
+    aside{
+        display: none;
+    }
 }
 
