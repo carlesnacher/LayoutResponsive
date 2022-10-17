@@ -10,6 +10,7 @@
     max-width: 1000px;
     margin: auto;
     display: flex;
+    /*Abreviamos flex direction y flex wrap con flex-flow*/ 
     flex-flow: row wrap;
 }
 
@@ -59,6 +60,7 @@ header nav a {
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    /* Repartimos de forma equitativa el espacio que hay en el contenedo con flex-grow */
     flex-grow: 1;
 }
 
@@ -69,6 +71,7 @@ header nav a:hover {
 .main {
     background-color: #ffffff;
     padding: 20px;
+    height: 1000px;
     /* Tres valores: flex-grow | flex-shrink | flex-basis */
     flex: 1 1 70%;
 }
@@ -140,6 +143,7 @@ footer .social a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
+    /*Ponemos display inline-block pq no tenemos flex en .social*/
     display: inline-block;
 }
 
