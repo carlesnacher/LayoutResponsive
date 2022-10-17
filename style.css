@@ -36,3 +36,19 @@ header .logo a{
     font-family: Arial;
     line-height: 60px;
 }
+
+header nav{
+    width: 50%;
+}
+
+header nav a{
+    background-color: #c0392b;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav a:hover{
+    background-color: #e74c3c;
+}
