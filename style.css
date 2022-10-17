@@ -9,6 +9,8 @@
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 body{
@@ -67,6 +69,7 @@ header nav a:hover{
 .main{
     background-color: #ffffff;
     padding: 20px;
+    /* Tres valores: flex-grow | flex-shrink | flex-basis */
     flex: 1 1 70%;
 }
 
@@ -80,4 +83,21 @@ header nav a:hover{
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
+}
+
+aside{
+    background-color: #008000;
+    padding: 10px;
+    /* Tres valores: flex-grow | flex-shrink | flex-basis */
+    flex: 1 1 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+aside .banner{
+    background-color: #ff993e;
+    height: 150px;
+    margin: 10px;
 }
